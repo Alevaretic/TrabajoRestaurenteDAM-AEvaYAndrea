@@ -1,0 +1,211 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    height: 30vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/1Cabecera.jpg");
+    background-size: cover;
+    z-index: 9999;
+}
+
+.menuCabecera {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 25%;
+    left: 70%;
+    padding-top: 25px;
+}
+
+.menuCabecera a {
+    text-decoration: none;
+    color: white;
+}
+
+header .logo {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    top: -20px;
+    left: 130px;
+    background-image: url("../images/logoRojo.png");
+    background-size: cover;
+}
+
+header #titulo {
+    position: relative;
+    top: 100px;
+    left: 90px;
+    font-size: 45px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 1000px;
+    height: 30vh;
+    background-color: #000000;
+}
+
+.contenedorFooter {
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    left: 60px;
+
+}
+
+.contenedorFooter a,
+.contenedorFooter p {
+    text-decoration: none;
+    color: white;
+}
+
+.contenedorFooter a:hover,
+.menuCabecera a:hover {
+    color: #ff4529;
+}
+
+.menuFooter {
+    position: relative;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.menuFooter a {
+    padding-bottom: 10px;
+}
+
+footer #enlaceLogo {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-image: url("../images/logoRojo.png");
+    background-size: cover;
+}
+
+#enlaceLogo:hover {
+    background-image: url("../images/logoAmarillo.png");
+}
+
+.contacto {
+    position: relative;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#pagInformativa {
+    margin-top: 20px;
+    color: #ff4529;
+}
+
+#pagInformativa:hover {
+    color: #ffd565f5;
+}
+
+@media screen and (max-width : 820px) {
+
+    .menuCabecera {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 40%;
+        left: 50%;
+        padding-top: 25px;
+    }
+
+    header .logo {
+        position: relative;
+        width: 220px;
+        top: -10px;
+        left: -230px;
+    }
+
+    header #titulo {
+        position: relative;
+        top: 100px;
+        left: -230px;
+    }
+
+    .contenedorFooter {
+        left: 50px;
+    
+    }
+    
+    footer #enlaceLogo {
+        top:30px;
+        height: 150px;
+        width: 150px;
+        background-image: url("../images/logoRojo.png");
+        background-size: cover;
+    }
+}
+
+
+@media screen and (max-width : 480px) {
+
+    .menuCabecera {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-between;
+        width: 40%;
+        height: 20vh;
+        left: 45%;
+    }
+
+    header .logo {
+        height: 130px;
+        width: 130px;
+        top: 20px;
+        left: -150px;
+    }
+
+    header #titulo {
+        position: relative;
+        width: 30vw;
+        height: 30vh;
+        top: 80px;
+        left: -170px;
+        font-size: 20px;
+    }
+    
+    .contenedorFooter {
+        left: 5px;
+        font-size: 10px;
+    
+    }
+    
+    footer #enlaceLogo {
+        top:30px;
+        height: 90px;
+        width: 90px;
+        background-image: url("../images/logoRojo.png");
+        background-size: cover;
+    }
+    
+    
+}

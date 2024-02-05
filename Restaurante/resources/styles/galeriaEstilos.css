@@ -1,0 +1,138 @@
+section {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    top: 500px;
+    left: 5%;
+    width: 90vw;
+    height: 120vh;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 700px;
+    height: 30vh;
+    background-color: #000000;
+}
+
+.contenedorImg {
+    position: relative;
+    height: 20vh;
+    width: 20vw;
+    left: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: contenedorImg;
+    animation-duration: 4s;
+}
+
+@keyframes contenedorImg {
+
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+
+}
+
+.img1 {
+    background-image: url("../images/algas.jpg");
+}
+
+
+.img2 {
+    height: 30vh;
+    width: 25vw;
+    background-image: url("../images/dumplings-dulces.jpg");
+}
+
+.img3 {
+    background-image: url("../images/galletas-suerte.jpg");
+}
+
+.img4 {
+    height: 40vh;
+    width: 20vw;
+    background-image: url("../images/fieos-arroz-vegetal.jpg");
+}
+
+.img5 {
+    top: -50px;
+    background-image: url("../images/rollitos1.jpg");
+}
+
+.img6 {
+    height: 40vh;
+    width: 20vw;
+    background-image: url("../images/sushi-plato.jpg");
+}
+
+.img7 {
+    top: -40px;
+    background-image: url("../images/bola-arroz.jpg");
+}
+
+.img8 {
+    height: 30vh;
+    width: 20vw;
+    top: 30px;
+    background-image: url("../images/ramen.jpg");
+}
+
+.img9 {
+    height: 40vh;
+    width: 20vw;
+    top: -110px;
+    background-image: url("../images/mesa-comida.jpg");
+}
+
+.img10 {
+    top: 30px;
+    background-image: url("../images/pastel-luna.jpg");
+}
+
+.img11 {
+    height: 40vh;
+    width: 20vw;
+    top: -110px;
+    left: 130px;
+    background-size: contain;
+    background-image: url("../images/sushi-bolas.jpg");
+}
+
+.img12 {
+    background-image: url("../images/sushi-california.jpg");
+}
+
+/* 
+@media screen and (max-width:820px){
+
+    #tituloMenu {
+        width: 50vw;
+        padding-bottom: 20px;
+    
+    }
+}
+
+@media screen and (max-width:480px){
+
+    section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: 400px;
+        width: 90vw;
+        height: 120vh;
+    }
+    .contenedorImg {
+        height: 30vh;
+        width: 30vw;
+        left: 5px;
+    }
+}*/
