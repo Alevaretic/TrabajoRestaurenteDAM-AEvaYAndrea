@@ -1,0 +1,176 @@
+section {
+
+    position: relative;
+    top: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 1350px;
+    height: 30vh;
+    background-color: #000000;
+}
+
+
+#tituloCarta {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    width: 30%;
+    padding-bottom: 20px;
+    color: #ff4529;
+    box-shadow: 2px 2px 5px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.Carta {
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80vw;
+}
+
+.platos {
+    position: relative;
+    width: 30vw;
+    margin-left: 100px;
+}
+
+.platos h2 {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #ff4529;
+    box-shadow: 2px 2px;
+
+}
+
+.imgPlatos {
+    position: relative;
+    margin-left: 50px;
+    width: 30vw;
+    background-image: url("../images/mesa-comida.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.textoPlato {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+
+}
+
+.imagen-contenedor {
+    display: none;
+    position: absolute;
+    background-size: contain;
+    min-width: 20vw;
+    z-index: 1;
+}
+
+.textoPlato:hover .imagen-contenedor {
+    display: block;
+}
+
+.ContenedorParallax {
+    position: relative;
+    top: 400px;
+    width: 100%;
+}
+
+.parallax {
+    background-image: url("../images/cocina.jpg");
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tituloMenu {
+    position: relative;
+    text-align: center;
+    top: 600px;
+    font-size: 50px;
+    width: 30vw;
+    padding-bottom: 20px;
+    color: #ff4529;
+    box-shadow: 2px 2px 5px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.menu {
+    position: relative;
+    top: 700px;
+    left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70vw;
+
+}
+
+.menu h2 {
+    width: 15vw;
+    color: #ff4529;
+}
+
+.reserva {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    width: 35vw;
+    height: 25vh;
+    top: 100px;
+    padding-top: 15px;
+}
+
+.reserva a {
+    position: relative;
+    top: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 2px 2px;
+    text-decoration: none;
+    color: #ff4529;
+}
+
+.reserva a:hover {
+    color: #000000f5;
+    box-shadow: 3px 3px;
+    background-color: #ffd565f5;
+}
+
+@media screen and (max-width:820px){
+
+    #tituloMenu {
+        width: 50vw;
+        padding-bottom: 20px;
+    
+    }
+}
+
+@media screen and (max-width:480px){
+
+    .platos {
+        width: 80vw;
+        margin-left: 0px;
+    }
+    .imagen-contenedor{
+        visibility: hidden;
+    }
+}
+

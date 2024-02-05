@@ -1,0 +1,123 @@
+body
+{
+    margin:0px;
+    padding: 0px;
+
+}
+.Información
+{
+    position: relative;
+    top:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+    
+    margin-left: 350px;
+
+    justify-content: space-around;
+
+    
+
+
+}
+.tabla
+{
+    font-size: 25px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-bottom: 23px;
+
+    flex-direction: column;
+    
+}
+.DatosH
+{
+    position: relative;
+    display: flex;
+    margin: relative;
+    text-align: justify;
+    margin-bottom: 5px;
+    font-size: 15px;
+
+    align-content: center;
+
+}
+.Datos
+{
+    position: relative;
+    display: flex;
+    margin: relative;
+    text-align: justify;
+    margin-bottom: 5px;
+    font-size: 15px;
+
+    align-content: center;
+    
+}
+.imagen
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 5px;
+    bottom: 350px;
+
+    flex-direction: column;
+
+}
+.ubicacion
+{
+    position: relative;
+    display: flex;
+    margin: relative;
+    flex-wrap: wrap;
+
+
+    justify-content: space-around;
+
+
+    margin-left: 50vh;
+    margin-top: -70vh;
+
+    animation-name: ubicacion;
+    animation-duration: 2s;
+
+}
+@keyframes ubicacion
+{
+    0%
+    {
+        transform: skew(5deg);
+    }
+    50%
+    {
+        transform:skew(-5deg);
+    }
+    100%
+    {
+        transform: skew(5deg);
+    }
+}
+.DatosCerrado
+{
+    position: relative;
+    display: flex;
+    margin: relative;
+    text-align: justify;
+    margin-bottom: 5px;
+    font-size: 15px ;
+
+
+    align-content: center;
+    color: rgb(227, 67, 67);
+}
+
+footer
+{
+    top:500px;
+}
