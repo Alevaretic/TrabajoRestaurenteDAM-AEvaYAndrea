@@ -140,7 +140,7 @@ section a {
     background-image: url("../images/bols.jpg");
 }
 
-/*@media screen and (max-width: 820px) {
+@media screen and (max-width: 820px) {
 
     section {
         display: flex;
@@ -203,4 +203,4 @@ section a {
     footer{
         top:450px;
     }
-}*/
+}
