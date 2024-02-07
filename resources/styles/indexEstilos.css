@@ -191,8 +191,10 @@ section a {
     .imgRestaurante, .imagenes{
         visibility: hidden;
     }
+    
     #inaguracion p {
-        width: 50vw;
+        width:70vw;
+        font-size:35px;
     }
 
     #letrero {
