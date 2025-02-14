@@ -1,0 +1,15 @@
+Tabla dentada : int[][]  t = new int[][]
+
+
+- Crear t.dentada -
+int[][] t = {
+
+    new int[] {1,2,3,4},
+    new int[] {4,6},
+    new int[] {2,3,4,1}
+};
+
+- Recorrer - 
+for(int i = 0; i < t.Length; i++) -> fila
+    for(int j = 0; j < t[i].Length; j++) -> columna
+        Console.Write(t[i][j]);

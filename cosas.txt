@@ -1,0 +1,8 @@
+Matrices [,] (tablas multidimensionales)
+Tuplas / tabla dentadas [][]
+
+- Matrices 
+Podemos recorrerlas con bucles :
+
+for(int i = 0; i < m.Length(0); i++){}
+Las matrices tiene que tener las mismas dimensiones.
