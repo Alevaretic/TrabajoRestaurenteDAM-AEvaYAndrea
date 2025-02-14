@@ -1,0 +1,19 @@
+. -> conicide con cualquier caracter
+[] -> cualquier caracter dentro de [] 
+[^] -> todos los caracteres menos los del cocherte 
+^[] -> De esta manera hace que empiece por ^x
+$ -> Para hacer que finalice de x$ manera 
+[-] -> todos los caracteres del rango indicado [0-9]
+\s -> espacio
+\S -> NO espacio 
+\/ -> Es para poner una barra literal 
+{} -> es para poner num de repeticiones o num maximo : {1-3} {3}
+* -> 0 o +1 veces 
++ -> 1 o +1 veces
+? -> 0 o 1 veces
+
+
+-- Match 
+El patron debe de ser Regex -> Regex x = new Regex(@"");
+
+etiquetas ejemplo -> (?<dia>\d{2})
