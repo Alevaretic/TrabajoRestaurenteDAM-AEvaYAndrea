@@ -1,0 +1,27 @@
+// cuando pide : crea un nmetodo de clase, hay que poner STATIC 
+
+ejemplo : public static string GetNombre(){};
+
+TEMA-8 ______________________________
+
+clase Path 
+DirectorySeparatorChar : es 
+PathSeparator : 
+
+tema 8.2 _____________________________________________________
+
+Cerrar los ficheros es muy importante. Porque se puede petar o te bloquea porque el fichero ya esta abierto. 
+
+Escrtura (Write) / Leer (Read)
+Volcado (Flush) : es obligar a la escriptura. 
+
+SreamWriter / StreamReader.
+
+---- REPASO ------
+Ficheros de Lectura y Escritura.
+
+SreamWriter :
+StreamReader : sr.EndOfStrem() //es para que lea hasta el  final del fichero. 
+
+FilStream //ESTUDIAR PARA SEGUNDO 
+    
