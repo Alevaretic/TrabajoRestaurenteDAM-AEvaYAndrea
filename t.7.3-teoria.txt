@@ -1,0 +1,69 @@
+
+// REPASO :
+
+Que es una clase : 
+Es el fragmento de codigo donde hay atributos. 
+
+Que es un objeto : 
+Es cuando instanciamos una clase
+
+Que es un atributo : 
+Es el dato que le da a nuestras variables
+
+Que son los metodos : 
+Son accines, comportamientos. 
+
+Que es instanciar : 
+Hacer un new 
+
+Composicion : 
+Dentro de mi clase en el constructor. 
+
+Agregacion : 
+Fuera de mi clase 
+
+¡¡¡¡ HACER CASO DE ESTUDIO DE LA PAG 41 (psicologo) !!!!
+
+
+---------------------------------- T - 7.3
+Excepciones 
+
+if (){
+    throw new ArgumentNullException("paciente");
+}
+
+Para avisar del peligro try{} catch() : ------
+
+try{ 
+    Console.WriteLine("Numero: ");
+    int numero = int.PArse(Console.ReadLine());
+    
+    Console.WriteLine("Bien"); -- Esto va dentro pq despues del catch lo sacaria tmb aunque de error. 
+}
+catch(FormatException){
+    Console.WriteLine("Error");
+}
+
+El orden debe de ser la mas generalizada la ultima (exception).
+
+FINALY --------------------------------------
+try{}
+catch(){}
+finally(){} -- Es para cerrar ficheros , etc. IMPORTANTE que sino peta
+
+CREAR NUESTRAS EXCEPCIONES -------------------------------------
+
+1. Crear una (clase)Excepciones.cs
+2. Hereda de Exception 
+3. SOLO constructor 
+4 . Ejemplo :
+    class DepartamentoException : Exception
+    {
+        public DepartamentoException(string message) : base (message) {}    
+    }
+
+¿Como llamar en mi clase?
+
+throw new DepartamentoException( $"mensaje" );
+
+Hay que añadir un nuevo constructor para que reciba la exception. 
