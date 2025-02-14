@@ -1,0 +1,51 @@
+Enumeradores 
+
+- Creacion 
+enum Tamaño : int  {
+
+    Pequeño,Mediano, Grande
+}
+
+// Por defecto los enumerados son int 
+
+- Crear tipo ?
+Tamaño tamaño = default; -> esto se refiere a pequeño
+
+- Acceder dentro del Enumeradores
+tamaño = Tamaño.Grande;
+
+- CONVERSION / pasar de un tipo a otro. 
+
+Enum a Cadena -> tamaño.ToSting();
+
+Cadena a Enum -> Enum.TryParse();
+
+- IsDefinded es para buscar si existe 'x' en el enumerado.
+
+Enumeradores NO exluyentes [flags]
+
+ estructura : 
+
+[Flags]
+enum Extra : byte {
+
+    = 0_0000_0000, 
+    = 0_0000_0001,
+    = 0_0000_0010,
+    = 0_0000_0100,
+    = 0_0000_1000,
+    = 0_0001_0000,
+    = 0_0010_0000,
+    = 0_0100_0000,
+    = 0_1000_0000,
+    = 1_0000_0000,         
+}
+
+Extra extras = default;
+
+- Para añadir utilizamor or | :
+
+extras |= Extra.Climatizador | Extra.Fulled; -> sale Climatizador,Fulled.
+
+- Para quitar -> &= ~
+extras &= ~Extra.Climatizador; sale Fulled.
