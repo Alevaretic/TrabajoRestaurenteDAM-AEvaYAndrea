@@ -1,0 +1,56 @@
+________________________________ 14/01/2025
+
+Repaso. Tema 7 - Implementación de las relaciones.
+
+1 - Poner un atributo del tipo con el que me estoy relacionando.
+    (En la clase A tengo que tener un atributo de tipo B)
+    A <>-> B 
+    A <pintado>-> B
+    
+    En el UML ese atributo NO aparece, lo tengo que poner yo (donde esta el rombo pongo el atributo).
+
+2 - Una vez que tengo el atributo debemos mirar la cardinalidad. 
+    1· A <>-> B
+    2· A <pintado>->5 B
+    3· A <pintado>->1.. B 
+    
+    Ejemplo : 
+     le doy valor a mis atributos en el contructor 
+    1· Class A { B b; }
+    2· Class A { B[] b; 
+                 public A(){
+                    b = new B[5];
+                    }
+                }
+    3· Class A { B[] b;
+                 public A(){
+                    b = new b[0];
+                 }
+               }
+
+3 - Diferencia entre agregacion y composicion.
+    · Agregacion A <>-> B : pasas el objeto. 
+        Ejemplo :
+         |(C)Empresa| A <>->1.. B |(C)Empleado|
+          ----------               -----------
+         
+        Class Empresa{
+            Empleado[] empleados; //¿Porque un array? Porque es una relacion de 1 a mcuhos. A demás al ser una agregacion NO se puede crear dentro de mi clase.  
+            
+            public Empresa( Empleado[] e){ //
+                empleados = e; //Recibo el array
+            }
+        }
+    · Composicion A <pintado>-> B : creas el objeto.
+        Ejemplo :
+         |(C)Empresa| A <pintado>->1.. B |(C)Empleado|
+          ----------               -----------
+         
+        Class Empresa{
+            Empleado[] empleados; //¿Porque un array? Porque es una relacion de 1 a mcuhos. A demás al ser una comoposicion hay que hacer el new dentro de la clase.   
+            
+            public Empresa(in string dni, in int añoNacimiento){ //Recibo los datos para crear un objeto
+                empleados = new Empleado[0];
+                empleados[0] = new Empleado(); //Esto se puede hacer en un Método (AñadeGerente(){}). 
+            }
+        }

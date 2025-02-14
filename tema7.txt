@@ -1,0 +1,353 @@
+TIPOS DE METODOS :  
+
+- Instancia (objeto)
+    .Necesita un objeto instanciado en la memoria para poder acceder.
+    .Pueden acceder tanto a atributos de instancia como de clase.
+    .Pueden modicar el estado de un objeto concreto en memoria si este es mutable.
+    
+- Clase (static) / Instancia
+    .No necesito tener un objeto instanciado en memoria para acceder a ellos.
+    .Solo pueden acceder a los atributos de clase (static) y no a los de instancia.
+
+- Acceso y actualización (get,set)
+    .También se les conoce como Accesores - Mutadores en general, Propiedades (C# y Kotlin) o Setters - Getters (Java).
+
+TIPS ____________________________________________
+Crear archivo con el nombre de la clase ejemplo Libro.cs -> Class Libro{} IMPORTANTE siempre en mayúscula. 
+- crear = instanciar 
+- new = hacer reserva de memoria 
+- + -> Public
+- - -> private
+- # -> protected 
+
+CONTRUCTOR ________________________________________
+En el UML Aparece como -> +Libro() 'vacio'
+Descipcion : 
++ = public  
+Por defecto es DEFAULT.
+Sirve para reserva de memoria y darle valor a TODOS los atributos.
+- Se pone el constructor cuando es parametrizado (el objeto?)
+No devuelve nada, ni siquiera un void. 
+Se debe de llamar igual que la clase.
+Por defecto no recibe nada por ello sale Libro() 
+
+¿Que utilizamos nosotros?
+Le pasamo un parametro al constructor de cada atributo? nuestro.
+Son parametros de entrada 'in' este in significa que tiene un valor y que dentro no lo puedes cambiar. 
+Ejemplo: 
+Libto(string in titulo){
+    this.titulo = titulo;
+}
+El 'this' lo utilizamos para indicar al constructor cual es nuestro atributo dentro de nuestra clase. 
+Entronces dentro de nuestro titulo copia el titulo que recibe. 
+
+CONTRUCTOR DE COPIA ___________________________________
+La funcion es copiar un objeto.
+Ejemplo : 
+Libro l1 = new Libro("Las mil y una noches");
+Libro l2 = l1; -> has hecho una copia 
+Libro l2 = new Libro(l1);
+Objetivo? Tener dos reserva de memoria pero que sean diferente objeto. 
+
+DESTRUCTOR ________________________________________
+No lo vamos a utilizar, se utiliza en C++. 
+Nustro destructor por defecto es el 'recolector de basura'.
+
+GETTERS ______________________________________________
+retona el atributo
+
+SETTERS ______________________________________________
+Devuelven void 
+Reciben el atributo que queremos darle valor.
+
+CAMPOS ______________________________________________
+Deben ser campos privados. 
+Campo de solo lectura -> readonly. 
+Coge valor en el constructor
+
+FLECHAS DE UML _______________________________________________
+
+-> 'asociacion'
+<-> 'asociacion'
+- 'asociacion'
+<>-> 'agregacion' 
+<pintado>-> 'composicion'
+
+El rombro relleno esta relleno porque 
+
+----------                  -----
+|   A     | (rombo vacio)-> | B |
+-----------                 -----
+|B objeto;|
+-----------
+
+1. Cunado hay una agregacion o una composicion tengo un atributo dentro de mi clase del tipo con el que me estoy relacionando donde está el rombo. 
+
+2. NO aparece en el UML
+
+3. Cardinalidad : 
+    1 - Creo el atributo de ese tipo
+    +1 - Estructura dinamica (Array) 
+
+ejemplo:
+si mi lirbo tiene mas de tres autores creo dentro de la clase libro : 
+class Libro {
+    
+    private Escritor[] esctritores;
+
+    public Escritor(){
+        autores = new Escritor[3];
+    }
+}
+
+4. Composiciones (rombo relleno)->  
+    SI pinto, SI desaparece el todo, SI desparecen las partes.
+    (instanciar el objeto) = Hacer el new de mi atributo dentro de mi clase (esta es la unica manera de poder hacer esto).
+
+ejemplo : 
+class Banco {
+
+    ...
+    Sucursal suc; // Esto es otra clase
+
+    public Banco(){
+
+        suc = new Sucursal;
+    }
+}
+
+Main{
+
+    Banco b = new Banco;
+}
+
+5. Agregacion (rombo vacio)->
+    SI NO pinto, SI desaparece el todo, NO desparecen las partes.
+    (instanciar el objeto) = Hacer el new de mi atributo fuera de mi clase y luego copiarlo.
+
+ejemplo : 
+class Banco {
+
+    Sucursal sb;
+
+    public Banco(){
+
+        suc = null;
+    }
+
+    public void Añadir(Sucursal s){
+        this.sb = s; //Copiar el valor que recibo
+    }
+}
+
+Main{
+
+    Banco b = new Banco;
+    Sucursal s = new Sucursal(); // Crear sucursal
+
+    b.Añadir(s);
+}
+
+Estructura de POO ________________________________________
+
+_____________________
+|                    |
+|      Ejemplo       | -> Nombre de la clase -> class Ejemplo {} (En C# lo ponemos en mayúscula).
+|____________________|
+|- a:int             | -> Atributos : int a; float b; string c;
+|____________________| 
+|+ GetA():           | -> Constructores | Destructores | Métodos | Accesores
+|- SetC(string):void |
+|____________________|
+
+
+ATRIBUTOS__________________________________________________________
+Que debemos de saber de los atributos ? 
+
+Visibilidad : 
+    Publica (+) -> public
+    Privada (-) -> private
+    Protegida (#) -> protected 
+ 
+Si no ponogo nada, se considera que el atributo es privado. 
+Publico = a que podemos acceder al dato desde fuera de mi clase. -> static void Main(){ e.a = 5; }.
+Privado = a que no se puede acceder a mi dato desde fuera de mi clase. -> static void Main(){ e.a = 5;(NO ME DEJA ACCEDER)}
+
+TERCERA REGION DE POO _____________________________________________________
+
+- Constructores
+    No devuelven nada, ni siquiera void
+    Se llaman igual que la calse
+    Da valor a todos los atributos 
+    Tipos : 
+        ·Por defecto :
+            No hace flata implementarlo.
+        ·Parametrizado : 
+            public Ejemplo(int a; float b){ this.a = a; // This es para resolver la ambiguedad (nuestro parametrizado tiene el mismo nombre que nuestro atributo.)
+                                            this.b = b;
+                                            c = "vacio" // Cuando no recibo por parametro un valor yo debo ponerlo
+                                          }
+        ·De copia (El dato que recibo es el del tipo de mi clase) :
+            public Ejemplo (in Ejemplo e){
+                                            a = e.a;
+                                            b = e.b;
+                                            c = e.c;
+                                            
+                                         }
+                                         
+En que momento llamo al contructor?  
+
+Cuando yo hago new es caundo llamo a un constructor. 
+Por ejemplo, en el main: 
+static void Main(){
+    Ejemplo e = new Ejemplo();          // esto es un constructor por dejecto.
+    Ejemplo e1 = new Ejemplo(5,3.2);    // esto es un contructor parametrizado, puesto que le estoy mandando los parametros.
+    Ejemplo e2 = new Ejemplo(e1);       // esto es un constructor de copia.
+}
+
+GETTERS y SETTERS __________________________________________________ 
+
+Get + Nom atributo (GetA):
+    Retorna el valor del atributo (return a).
+    Normalmente public (+)
+    
+Set + Nom atributo (SetB) :
+    Copia el parametro al atributo 
+    Normalmente private (-)
+    
+Objetos valor ? ____________________________________________________________________
+
+UML : |(D)Puntos2D |
+      --------------
+
+struct Puntos2D {
+        
+    atributos  
+}
+
+Crear un objeto valor : Puntos2D p; 
+
+Aqui no hace falta crear un contructor de copia puesto que los structs trabajan por tipos valor.
+
+DATA TIME ______________
+Esto lo utilizaremos el Data Time en los examenes. Este valor nos ayuda a instanciar objetos con valor fecha.
+
+¿Como se crea un data time?
+DataTime t1 = new DataTime();
+DataTime hoy = new DataTime.Today;
+
+HERENCIAS ______________________________________________________________
+
+Padre(clase) - Hijos (subclase) 
+
+-|> HERENCIA (felcha cerrada)
+-> ¡ESTO NO ES UNA HERENCIA!. Es como una 'agregacion'
+
+Herencia SIMPLE :
+
+· Cuando la subclase hereda de una sola superclase.
+· Será la que nosotros vamos a usar.
+· Por ejemplo, supongamos que tenemos la superclase Articulo con un precio y un nombre .
+
+Una subclase de Articulo denominada ArticuloRebajado que además, añade al articulo un campo con el porcentaje
+de rebaja, denominado porcentajeRebaja .
+
+Herencia MULTIPLE ¡NO EXISTE EN C#!
+
+IMPLEMENTACION DE LA HERENCIA : 
+-------------     ---------------------
+|(C)Articulo| <|- |(C)ArticuloRebajado|
+-------------     ---------------------
+
+El # solo es accesible desde mi clases y mis clases hijos. 
+
+class Articulo {
+   
+   protected double precio; 
+   protected string nombre;
+}
+
+class ArticuloRebajado : Articulo {
+    
+    // aqui no se debe de poner los atributos de la clase padre. Porque ya los coje.Solo se debe de poner los atributos de la subclase.
+    
+    private ushort porcentajeRebaja;
+}
+
+_____________________________________________________
+El new 'elimina' el del padre y se queda con el del hijo (Se conoce como reemplazo)
+ejemplo : 
+  public new string ATexto(){} (este es el hijo)
+
+Refinamiento o Invalidacion : 
+    se ve en el UML en la clase Padre negrita y cursiva junto {virtual} y en la clase hija se ve con un ^ antes del +/-/#.
+    ejemplo : 
+
+    En el metodo del padre se deberia de poner public virtual string ATexto(){} y en el hijo public override string ATexto(){}.
+___________________________________________________________________________________
+Downcasting (el padre necesita trabajar con el hijo)
+
+1. Mediante cast explícito:
+    Articulo a = new ArticuloRebajado("Polo Fred Perry", 70d, 15);
+    ArticuloRebajado ar = (ArticuloRebajado)a; // realmente a es un ArticuloRebajado
+    
+Sin embargo el siguiente código produciría un error al ejecutar 💀
+    Articulo a = new Articulo("Polo Ralph Lauren", 75f);
+    ArticuloRebajado ar = (ArticuloRebajado)a;
+
+2. Mediante el operador is :
+Nos sirve para preguntarle a un objeto si es de un determinado tipo y saber así con seguridad si podemos hacer el
+downcasting.
+    Articulo a = new Articulo("Polo Ralph Lauren", 75f);
+    if (a is ArticuloRebajado) // Preguntamos si admite la forma de ...
+    {
+        ArticuloRebajado ar = (ArticuloRebajado)a;
+        Console.WriteLine(ar);
+    }
+3. Mediante el operador as :
+Realiza directamente el downcasting y si no puede asigna null.
+    Articulo a = new Articulo("Polo Ralph Lauren", 75f);
+    // Generará un Warning porque se puede evaluar a null y ar no es anulable
+    // deberíamos declararlo como ArticuloRebajado? ar
+    ArticuloRebajado ar = a as ArticuloRebajado;
+    Console.WriteLine(ar);
+    // Equivaldría ha hacer...
+    ArticuloRebajado ar = a is ArticuloRebajado ? (ArticuloRebajado)a : null;
+    
+___________________________________________________________________________________
+TODOS HEREDAN DE OBJCET   
+
+public ovverride string ToString(){}
+
+public override bool Equals(object obj)
+{
+    bool iguales = obj is Articulo a
+                    // Si la entrada es un artículo y es distinto de null
+                    // y el nombre de los artículos son iguales.
+                    && a.nombre.CompareTo(nombre) == 0
+                    // y los precios son iguales con una precisión de 0.00001
+                    && Math.Abs(a.precio - precio) < 1e-5;
+    return iguales;
+}
+
+
+UpCasting -> Convertirse 'otra vez en el hijo'.
+
+public static void Felicita(Empleado e);
+{
+    Console.WriteLine("Felicidadeees");
+    e.GetNombre();
+    Gestor gAux = (Gestor) e;
+    gAux.GetComision();
+}
+
+o 
+
+Empleado empleado = new Gestor(); // Esto tmb es un UpCasting. 
+
+ABSTRACCION _______________________________________________
+
+Una / delante de los Get siginifica que este get no hace lo que deberia de hacer normalmente. Es una propiedad autocalculada. 
+
+Los metodos abstractos no tiene cuerpo NO se pone las {} desberia de ser porque si no ceas un cuerpo vacio : 
+abstract public double Area(); 
