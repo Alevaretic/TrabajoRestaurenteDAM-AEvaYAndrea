@@ -1,0 +1,46 @@
+- Atributos (protected,public,private) -> se inicializan en el constructor
+
+- Propiedades :
+    si pone definir atributo hay que hacer : bloque de get/set.
+    si pone autoimplementada hay que hacer : {get;set;}. / solo lectura : {get;}
+    
+- Utilizar la LANDA => expresion;
+
+- Static es de tipo valor. 
+    -> Metodo static, no lo puedes llamar si hay un objeto instanciado
+    ejemplo : a1.RecordarNota() -> NO
+              Alumno.RecordarNota() -> SI 
+              
+- Metodo de instancia -> funciona através de un objeto 
+- "" de clase -> Se invocan desde la clase 
+- Crea una clase que no intanciable -> Abstract
+
+- Clase statica -> no se puede hacer un objeto sobre esta de clase TODOS los metodos Statics. 
+    - otra manera de llamar a una clase statica = clase de utilidad.
+
+Hacer casos de estudio : Cuenta,Taller,Psicologo, Articulo Rebajado, Tiket
+
+
+// Estuadiar :
+    dateTime,
+    readKey,
+    upcasting,
+    downcasting,
+    generaliacion,
+    composicion,
+    agregacion
+
+ESTRUCUTRA DE ESTUDIO EXAMEN PROG 2TRI.
+Examen 27 de febrero (2 semanas)
+
+17 LUNES     - Bucles
+18 MARTES    - Arrays y Cadenas (StringBuilder)
+19 MIERCOLES - Matrices y Tabla dentadas
+20 JUEVES    - Objetos Basicos y Herencia implementar landa y 
+               autoimplementaciones
+24 LUNES     - Ficheros , expresiones regulares y Excepciones 
+               (MatchGroups)
+25 MARTES    - Ejercicios completo (MicroProcesador)
+26 MIERCOLES - Ejercicios pedidos con chapi, repasar cositas como
+               autoimplementacion, landa metodo() => ;
+               
