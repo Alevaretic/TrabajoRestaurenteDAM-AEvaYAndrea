@@ -1,0 +1,14 @@
+F:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Examen_3Tri\Ejercicio_1\bin\Debug\net8.0\Ejercicio_1.exe
+F:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Examen_3Tri\Ejercicio_1\bin\Debug\net8.0\Ejercicio_1.deps.json
+F:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Examen_3Tri\Ejercicio_1\bin\Debug\net8.0\Ejercicio_1.runtimeconfig.json
+F:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Examen_3Tri\Ejercicio_1\bin\Debug\net8.0\Ejercicio_1.dll
+F:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Examen_3Tri\Ejercicio_1\bin\Debug\net8.0\Ejercicio_1.pdb
+F:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Examen_3Tri\Ejercicio_1\obj\Debug\net8.0\Ejercicio_1.GeneratedMSBuildEditorConfig.editorconfig
+F:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Examen_3Tri\Ejercicio_1\obj\Debug\net8.0\Ejercicio_1.AssemblyInfoInputs.cache
+F:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Examen_3Tri\Ejercicio_1\obj\Debug\net8.0\Ejercicio_1.AssemblyInfo.cs
+F:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Examen_3Tri\Ejercicio_1\obj\Debug\net8.0\Ejercicio_1.csproj.CoreCompileInputs.cache
+F:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Examen_3Tri\Ejercicio_1\obj\Debug\net8.0\Ejercicio_1.dll
+F:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Examen_3Tri\Ejercicio_1\obj\Debug\net8.0\refint\Ejercicio_1.dll
+F:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Examen_3Tri\Ejercicio_1\obj\Debug\net8.0\Ejercicio_1.pdb
+F:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Examen_3Tri\Ejercicio_1\obj\Debug\net8.0\Ejercicio_1.genruntimeconfig.cache
+F:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Examen_3Tri\Ejercicio_1\obj\Debug\net8.0\ref\Ejercicio_1.dll

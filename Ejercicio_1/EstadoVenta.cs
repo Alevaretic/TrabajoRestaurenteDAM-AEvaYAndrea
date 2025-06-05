@@ -1,0 +1,1 @@
+public record EstadoVenta (bool disponible, float precio,string comparador = null);
