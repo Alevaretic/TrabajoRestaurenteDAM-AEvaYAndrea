@@ -1,0 +1,14 @@
+E:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Ejercicios_Matrices\Ejercicio_5\bin\Debug\net8.0\Ejercicio_5.exe
+E:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Ejercicios_Matrices\Ejercicio_5\bin\Debug\net8.0\Ejercicio_5.deps.json
+E:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Ejercicios_Matrices\Ejercicio_5\bin\Debug\net8.0\Ejercicio_5.runtimeconfig.json
+E:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Ejercicios_Matrices\Ejercicio_5\bin\Debug\net8.0\Ejercicio_5.dll
+E:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Ejercicios_Matrices\Ejercicio_5\bin\Debug\net8.0\Ejercicio_5.pdb
+E:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Ejercicios_Matrices\Ejercicio_5\obj\Debug\net8.0\Ejercicio_5.GeneratedMSBuildEditorConfig.editorconfig
+E:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Ejercicios_Matrices\Ejercicio_5\obj\Debug\net8.0\Ejercicio_5.AssemblyInfoInputs.cache
+E:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Ejercicios_Matrices\Ejercicio_5\obj\Debug\net8.0\Ejercicio_5.AssemblyInfo.cs
+E:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Ejercicios_Matrices\Ejercicio_5\obj\Debug\net8.0\Ejercicio_5.csproj.CoreCompileInputs.cache
+E:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Ejercicios_Matrices\Ejercicio_5\obj\Debug\net8.0\Ejercicio_5.dll
+E:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Ejercicios_Matrices\Ejercicio_5\obj\Debug\net8.0\refint\Ejercicio_5.dll
+E:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Ejercicios_Matrices\Ejercicio_5\obj\Debug\net8.0\Ejercicio_5.pdb
+E:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Ejercicios_Matrices\Ejercicio_5\obj\Debug\net8.0\Ejercicio_5.genruntimeconfig.cache
+E:\Primero-DAM\1-DAM\REPASO_JUNIO-PROG\Ejercicios_Matrices\Ejercicio_5\obj\Debug\net8.0\ref\Ejercicio_5.dll
